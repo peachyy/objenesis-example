@@ -1,4 +1,5 @@
 import org.objenesis.Objenesis;
+import org.objenesis.ObjenesisHelper;
 import org.objenesis.ObjenesisStd;
 import org.objenesis.instantiator.ObjectInstantiator;
 
@@ -22,5 +23,8 @@ public class ExampleTest {
 
         Example example4 =objenesis.newInstance(Example.class);
         System.out.println("example4:"+example4+"----"+example4.getName());
+
+        Example example5 = ObjenesisHelper.newInstance(Example.class);
+        System.out.println("example5:" + example5 + "----" + example5.getName());
     }
 }
