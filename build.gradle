@@ -1,0 +1,15 @@
+group 'com.peachyy'
+version '1'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+//repositories {
+//    mavenCentral()
+//}
+
+dependencies {
+    compile files('lib/objenesis-2.5.1.jar')
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
