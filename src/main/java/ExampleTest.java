@@ -18,6 +18,8 @@ public class ExampleTest {
         Example example3 = (Example)thingyInstantiator.newInstance();
         System.out.println("example3:"+example3+"---"+example3.getName());
 
+        ///objenesis=new ObjenesisSerializer();
+
         Example example4 =objenesis.newInstance(Example.class);
         System.out.println("example4:"+example4+"----"+example4.getName());
     }
